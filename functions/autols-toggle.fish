@@ -34,16 +34,16 @@ end
 
 function _autols::help --description "print help message for autols-toggle"
 
-echo -e "usage:
-\tautols-toggle\t\t\ttoggle autols on/off
-\t\t\ton \t\tturn autols on
-\t\t\toff\t\tturn autols off
-\t\t\t-h | --help\tShow this help message"
-
-	# set -l author "Kristoffer Sørensen" 
-    # set -l repo "https://github.com/Kristoffer-PBS/autols-fish"
-    # echo -e "autols-fish - a small plugin that automatically invokes ls whenever you enter a new directory.\n"
-    # echo -e "author:\t$author\n"
-    # echo -e "repo:\t$repo\n\n"
+set -l options "\t\twithout any options it acts like a toggle\non \t\tturn autols on
+off\t\tturn autols off
+-h | --help\tShow this help message"
+set -l author "Kristoffer Sørensen, Jurek Nitschky" 
+set -l origin "https://github.com/Kristoffer-PBS/autols-fish"
+set -l repo "https://github.com/jurek-nky/autols-fish"
+echo -e "autols-fish - a small plugin that automatically invokes ls whenever you enter a new directory.\n"
+echo -e "usage:\tautols-toggle [<>|on|off]\n\noptions:\n$options\n"
+echo -e "author:\t\t$author"
+echo -e "repo:\t\t$repo"
+echo -e "original repo:\t$origin"
 end
 
