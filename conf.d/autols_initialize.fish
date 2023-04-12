@@ -7,5 +7,3 @@ _autols
 if not set --query --universal autols_command
 	set --universal autols_command "ls"
 end
-
-abbr -a als "autols-toggle"
