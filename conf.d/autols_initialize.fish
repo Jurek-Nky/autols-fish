@@ -5,5 +5,5 @@
 _autols
 
 if not set --query --universal autols_command
-	set --universal autols_command "ls"
+	set --universal autols_command "ll"
 end
